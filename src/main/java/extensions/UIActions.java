@@ -7,7 +7,7 @@ import utilities.CommonOps;
 
 public class UIActions extends CommonOps{
 
-    @Step("Click on Element")
+    @Step("Wait for element click-ability, then Click on Element")
     public static void click(WebElement elem){
         wait.until(ExpectedConditions.elementToBeClickable(elem));
         elem.click();
@@ -18,31 +18,33 @@ public class UIActions extends CommonOps{
         elem.click();
     }
 
-    @Step("Update Text Element")
+    @Step("Wait for element visibility, then Update Text Element")
     public static void updateText(WebElement elem, String text){
         wait.until((ExpectedConditions.visibilityOf(elem)));
         elem.sendKeys(text);
     }
 
     @Step("Update Text Element as Human")
-    public static void updateTextHuman(WebElement elem, String text){
+    public static void updateTextAsHuman(WebElement elem, String text){
         wait.until((ExpectedConditions.visibilityOf(elem)));
-        for(char ch : text.toCharArray()) {
+        int length = text.length();
+        for (int i = 0; i < length; i++){
+            char c = text.charAt(i);
             try {
-                Thread.sleep(500);
+                Thread.sleep((int) (400 + (Math.random() * 100)));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            elem.sendKeys(ch + "");
+            elem.sendKeys(String.valueOf(c));
         }
     }
 
-    @Step ("Update element text")
+    @Step ("No wait Update element text")
     public static void noWaitSendKeys(WebElement elem, String text){
         elem.sendKeys(text);
     }
 
-    @Step ("Update element text as human")
+    @Step ("Wait for element visibility, then send keys & sleep")
     public static void sendKeysAndWait(WebElement elem, String text){
         wait.until((ExpectedConditions.visibilityOf(elem)));
         elem.sendKeys(text);
@@ -53,19 +55,12 @@ public class UIActions extends CommonOps{
         }
     }
 
-//    @Step("Update DropDown Element")
-//    public static void updateDropDown(WebElement elem, String text){
-//        wait.until((ExpectedConditions.visibilityOf(elem)));
-//        Select dropDown = new Select(elem);
-//        dropDown.selectByVisibleText(text);
-//    }
-
-    @Step("Mouse Hover Element")
+    @Step("Mouse Hover 2 Elements & Click")
     public static void mouseHover(WebElement elem1, WebElement elem2){
         action.moveToElement(elem1).moveToElement(elem2).click().build().perform();
     }
 
-    @Step("Mouse Hover Element")
+    @Step("Mouse Hover Element & Click")
     public static void mouseHover(WebElement elem1){
         action.moveToElement(elem1).click().build().perform();
     }

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 //import org.sikuli.script.FindFailed;
 //import org.testng.annotations.Parameters;
+import org.sikuli.script.FindFailed;
 import utilities.CommonOps;
 
 import java.util.List;
@@ -40,7 +41,7 @@ public class Verifications extends CommonOps {
         assertEquals(elems.size(), expected);
     }
 
-    @Step("Verify Visibility Of Elements (Soft-Assertion)")
+    @Step("(Soft-Assertion) Verify Visibility Of Elements")
     public static void visibilityOfElements(List<WebElement> elems) {
         for(WebElement elem : elems) {
             softAssert.assertTrue(elem.isDisplayed(), "Sorry " + elem.getText() + " not displayed");
@@ -48,15 +49,14 @@ public class Verifications extends CommonOps {
         softAssert.assertAll("Some elements were not displayed");
     }
 
-    @Step("Verify Element Visually")
+    @Step("Verify Element Visually using Sikuli")
     public static void verifyVisualElement(String ImageRepo, String expectedImageName) {
-//        try {
-//            screen.find(ImageRepo + expectedImageName + ".png");
-//        } catch (FindFailed findFailed) {
-//            System.out.println("Error Comparing Image File: " + findFailed);
-//            fail("Error Comparing Image File: " + findFailed);
-//        }
-        System.out.println("Disabled");
+        try {
+            screen.find(ImageRepo + expectedImageName + ".png");
+        } catch (FindFailed findFailed) {
+            System.out.println("Error Comparing Image File: " + findFailed);
+            fail("Error Comparing Image File: " + findFailed);
+        }
     }
 
     @Step ("Grafana: Verify user is displayed on search")
@@ -69,13 +69,4 @@ public class Verifications extends CommonOps {
         assertFalse(list.size() > 1);
     }
 
-    @Step("Verify Text with Text")
-    public static void verifyText(String actual, String expected) {
-        assertEquals(actual, expected);
-    }
-
-    @Step("Verify Number with Number")
-    public static void verifyNumber(int actual, int expected) {
-        assertEquals(actual, expected);
-    }
 }

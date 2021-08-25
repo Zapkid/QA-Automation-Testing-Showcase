@@ -11,19 +11,11 @@
         <parameter name="BrowserName" value="chrome"/>
         <parameter name="URL" value="http://localhost:3000/"/>
         <parameter name="Timeout" value="5"/>
-        <parameter name="ActiveDB" value="no"/>
         <parameter name="DDTFile" value="./DDTFiles/users.csv"/>
-        <parameter name="UDID" value="158adf71"/>
-        <parameter name="AppPackage" value="com.shivgadhia.android.ukMortgageCalc"/>
-        <parameter name="AppActivity" value=".MainActivity"/>
-        <parameter name="AppiumServer" value="http://localhost:4723/wd/hub"/>
-        <parameter name="URLAPI" value="http://localhost:3000/"/>
-        <parameter name="UserName" value="admin"/>
-        <parameter name="Password" value="admin"/>
-        <parameter name="ElectronDriverPath" value="./Drivers/electron.exe"/>
-        <parameter name="ElectronAppPath" value="C:/Users/rowan/AppData/Local/Programs/todolist/Todolist.exe"/>
-        <parameter name="CalculatorApp" value="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
-        <parameter name="AppiumServerDesktop" value="http://127.0.0.1:4723"/>
+        <parameter name="ActiveDB" value="no"/>
+        <parameter name="DBURL" value=""/>
+        <parameter name="DBUsername" value=""/>
+        <parameter name="DBPassword" value=""/>
         <classes>
             <class name="sanity.GrafanaAPI"/>
         </classes>

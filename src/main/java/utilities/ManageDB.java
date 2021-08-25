@@ -1,18 +1,13 @@
 package utilities;
 
 import io.qameta.allure.Description;
-import org.testng.annotations.Parameters;
 
 import java.sql.DriverManager;
 
 public class ManageDB extends CommonOps {
 
-    @Parameters({"DBURL", "DBUserName", "DBPassword"})
     @Description("Open a connection to the Database using a username & password")
-    public static void openConnection(String DBURL, String DBUserName, String DBPassword) {
-        dbURL = DBURL;
-        dbUserName = DBUserName;
-        dbPassword = DBPassword;
+    public static void openConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(dbURL, dbUserName, dbPassword);

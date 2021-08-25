@@ -55,6 +55,7 @@ public class CalculatorDesktop extends CommonOps {
     @Test (description = "Full Equation One", priority = 7)
     @Description ("Verify an equation operation on Calculator App")
     public void EquationOne() {
+        DesktopFlows.modeScientific();
         DesktopFlows.enterEquation("4*3======/9===");
         Verifications.verifyInt(Integer.parseInt(DesktopFlows.getResult()), 4);
         DesktopFlows.modeStandard();
@@ -63,6 +64,7 @@ public class CalculatorDesktop extends CommonOps {
     @Test (description = "Full Equation Two", priority = 8)
     @Description ("Verify an equation operation on Calculator App")
     public void EquationTwo() {
+        DesktopFlows.modeScientific();
         DesktopFlows.enterEquation("1+2*(3^4)=%14=!l=/p=");
         Verifications.verifyStringContains(DesktopFlows.getResult(), "1.769727");
         DesktopFlows.modeStandard();

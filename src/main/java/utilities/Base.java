@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.sikuli.script.Screen;
+import org.sikuli.script.Screen;
 import org.testng.asserts.SoftAssert;
 
 import java.sql.Connection;
@@ -17,11 +18,11 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class Base {
+
     // General
     protected static WebDriverWait wait;
     protected static Actions action;
     protected static SoftAssert softAssert;
-//    protected static Screen screen;
     protected static String platform;
     protected static String browserName;
     protected static String timeout;
@@ -31,17 +32,6 @@ public class Base {
     protected static String dbURL;
     protected static String dbUserName;
     protected static String dbPassword;
-    protected static String udID;
-    protected static String appPackage;
-    protected static String appActivity;
-    protected static String appiumServer;
-    protected static String urlAPI;
-    protected static String userName;
-    protected static String password;
-    protected static String electronDriverPath;
-    protected static String electronAppPath;
-    protected static String calculatorApp;
-    protected static String appiumServerDesktop;
 
     // Web
     protected static WebDriver driver;
@@ -60,6 +50,9 @@ public class Base {
     protected static Connection con;
     protected static Statement stmt;
     protected static ResultSet rs;
+
+    // Sikuli
+    protected static Screen screen;
 
     // Page Objects - Web
     protected static pageObjects.grafana.LoginPage grafanaLogin;

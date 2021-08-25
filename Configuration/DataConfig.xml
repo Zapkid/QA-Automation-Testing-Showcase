@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Environment>
 
-    <!-- Timeout -->
-    <Timeout>5</Timeout>
-
-    <!-- General -->
-    <PlatformName>web</PlatformName>
-
     <!-- Authorization -->
     <UserName>admin</UserName>
     <Password>admin</Password>
 
-    <!-- Web -->
-    <BrowserName>chrome</BrowserName>
-    <url>http://localhost:3000/</url>
+    <!-- Image Repo -->
     <ImageRepo>D:\\Automation\\Projects\\FinalProject\\ImageRepository\\</ImageRepo>
-
-    <!-- Data Driven Testing -->
-    <DDTFile>./DDTFiles/users.csv</DDTFile>
 
     <!-- Mobile -->
     <UDID>158adf71</UDID>
@@ -29,17 +18,12 @@
     <urlAPI>http://localhost:3000/</urlAPI>
 
     <!-- Electron -->
-    <ElectronDriver>./Driver/electrondriver.exe</ElectronDriver>
+    <ElectronDriver>./Driver/electron.exe</ElectronDriver>
     <ElectronApp>C:/Users/rowan/AppData/Local/Programs/todolist/Todolist.exe</ElectronApp>
 
     <!-- Desktop -->
+    <WinAppDriver>C:/Program Files (x86)/Windows Application Driver/WinAppDriver.exe</WinAppDriver>
     <CalculatorApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</CalculatorApp>
     <AppiumServerDesktop>http://127.0.0.1:4723</AppiumServerDesktop>
-
-    <!-- Database -->
-    <ActiveDB>No</ActiveDB>
-    <DBURL>jdbc:mysql://remotemysql.com:3306/xmxwWsQoI1</DBURL>
-    <DBUserName>xmxwWsQoI1</DBUserName>
-    <DBPassword>mZIi3qhCwC</DBPassword>
 
 </Environment>

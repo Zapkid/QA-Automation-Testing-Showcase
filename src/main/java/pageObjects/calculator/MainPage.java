@@ -6,12 +6,6 @@ import org.openqa.selenium.support.How;
 
 public class MainPage {
 
-    @FindBy (name = "Calculator")
-    public WebElement window_calc;
-
-    @FindBy(name = "Clear entry")
-    public WebElement btn_clearEntry;
-
     @FindBy(name = "Plus")
     public WebElement btn_plus;
 
@@ -92,5 +86,11 @@ public class MainPage {
 
     @FindBy (xpath = "//*[@AutomationId='closeParenthesisButton']")
     public WebElement btn_closeParenthesis;
+
+//    @FindBy (name = "Calculator")
+//    public WebElement window_calc;
+//
+//    @FindBy(name = "Clear entry")
+//    public WebElement btn_clearEntry;
 
 }

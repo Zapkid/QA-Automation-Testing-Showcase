@@ -14,7 +14,6 @@ public class DesktopFlows extends CommonOps {
 
     @Step ("Business flow: Enter Equation")
     public static void enterEquation(String equation){
-        modeScientific();
         for (int i = 0; i < equation.length(); i++) {
             desktopCalcClick(equation.charAt(i));
         }

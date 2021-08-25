@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Web DB Suite" parallel="false">
+
+    <listeners>
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
+    <!--        Need to connect to Grafana Server        -->
+    <test name="Web DB Test">
+        <parameter name="PlatformName" value="web"/>
+        <parameter name="BrowserName" value="chrome"/>
+        <parameter name="URL" value="http://localhost:3000/"/>
+        <parameter name="Timeout" value="5"/>
+        <parameter name="DDTFile" value="./DDTFiles/users.csv"/>
+        <parameter name="ActiveDB" value="yes"/>
+        <parameter name="DBURL" value="jdbc:mysql://remotemysql.com:3306/xmxwWsQoI1"/>
+        <parameter name="DBUsername" value="xmxwWsQoI1"/>
+        <parameter name="DBPassword" value="mZIi3qhCwC"/>
+        <classes>
+            <class name="sanity.GrafanaWebDB"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->
