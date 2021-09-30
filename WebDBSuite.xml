@@ -13,9 +13,9 @@
         <parameter name="Timeout" value="5"/>
         <parameter name="DDTFile" value="./DDTFiles/users.csv"/>
         <parameter name="ActiveDB" value="yes"/>
-        <parameter name="DBURL" value="jdbc:mysql://remotemysql.com:3306/xmxwWsQoI1"/>
-        <parameter name="DBUsername" value="xmxwWsQoI1"/>
-        <parameter name="DBPassword" value="mZIi3qhCwC"/>
+        <parameter name="DBURL" value="REDACTED"/>
+        <parameter name="DBUsername" value="REDACTED"/>
+        <parameter name="DBPassword" value="REDACTED"/>
         <classes>
             <class name="sanity.GrafanaWebDB"/>
         </classes>
