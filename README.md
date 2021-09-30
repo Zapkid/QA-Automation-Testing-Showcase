@@ -4,5 +4,5 @@ Demonstrating automation capabilities with smart automation infrastructure for Q
 
 
 
-### Grafan Login GIF
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Login")
+### Automated Login
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
