@@ -1,5 +1,5 @@
 # QA Automation Testing Showcase
-#### This project demonstrates my knowledge & capabilities in QA Automation. Utilizing a 'smart' automation infrastructure for multi-platform quality assurance automated testing.
+#### This DEMO project utilizes a 'smart' automation infrastructure for multi-platform quality assurance automated testing to demonstrates my knowledge & capabilities in QA Automation.
 
 
 [Demonstration Video](https://drive.google.com/file/d/1vmM2AdOjjdQmEhGrPhb4b2aCbc0yxJpb/view?usp=sharing)
