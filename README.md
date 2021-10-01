@@ -46,6 +46,8 @@ This project performs automated testing of various applications:
 * [TodoList](https://github.com/blaadje/Todolist) Desktop application tested with ElectronDriver
 * Windows Calculator - Desktop application tested with WindowsDriver
 
+---
+
 #### Tools & Frameworks:
 
 * [TestNG](https://testng.org/) Framework
@@ -62,14 +64,13 @@ This project performs automated testing of various applications:
 
 
 ---
+---
 
 ### Tests Overview
 
-
-
----
----
 ---
 
-### Automated Login
+#### Grafana - Web
+
+##### Login
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
