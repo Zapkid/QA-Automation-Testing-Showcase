@@ -59,7 +59,7 @@ This project performs automated testing of various applications:
 * [Appium Studio](https://digital.ai/continuous-testing/eclipse-intellij-plugins) & Java-Appium for Mobile Testing
 * [MySQL Database](https://remotemysql.com/) to stores Login Credentials
 * [OpenCSV](http://opencsv.sourceforge.net/) for CSV file parsing
-* [Jenkins](https://www.jenkins.io/) for Building, deploying and Automating Test executions
+* [Jenkins](https://www.jenkins.io/) for Automating Test executions & Test Pipelines
 * [Allure Reports](http://allure.qatools.ru/) - Reporting System
 
 
