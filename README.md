@@ -65,7 +65,7 @@ This project performs automated testing of various applications:
 
 ---
 
-* Configuration file & DB credentials have been redacted. 
+Please note: Configuration file & DB credentials have been redacted. 
 
 ---
 
