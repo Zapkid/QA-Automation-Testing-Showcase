@@ -16,19 +16,20 @@ The infrastructure provides an easy, simple and quick way to add new tests, and 
 ### Overview
 
 This project performs automated testing of various applications:
-* Web applications
+* Web based application
 * Web API
-* Mobile applications
-* Desktop applications
+* Mobile application
+* Electron application
+* Desktop application
 
 ---
 
 #### Infrastructure includes:
 
 * Layers (Utilities, Extensions, Workflows...)
-* Page Object design pattern
+* Page Object Design Pattern
 * External files support
-* Failure Mechanisms
+* Failure mechanisms
 * Reporting System (including video recordings & Screenshots)
 * Support for different client browsers
 * Visual testing
@@ -41,20 +42,20 @@ This project performs automated testing of various applications:
 
 * [Grafana](https://grafana.com/grafana/) - Web based application tested with WebDriver
 * Grafana API - Web API tested with REST Assuard
-* UK Mortgage Calculator - Mobile application tested with Appium
-* [TodoList Desktop application](https://github.com/blaadje/Todolist) tested with ElectronDriver
-* Windows calculator - Desktop application tested with WindowsDriver
+* [UK Mortgage Calculator](https://play.google.com/store/apps/details?id=uk.co.jamesgrimwood.mortgageadvisor&hl=en_GB&gl=US) - Mobile application tested with Appium
+* [TodoList](https://github.com/blaadje/Todolist) Desktop application tested with ElectronDriver
+* Windows Calculator - Desktop application tested with WindowsDriver
 
 #### Tools & Frameworks:
 
-* TestNG Framework
+* [TestNG](https://testng.org/) Framework
 * Listenrs interface for Logs & Customizable TestNG Reports
-* Monte Screen Recorder for Video Recordings
-* Selenium Java & API
-* REST Assured for API Testing
-* SikuliX API for Visual Testing
-* Appium Studio & Java-Appium for Mobile Testing
-* MySQL free online DB to stores Login Credentials
+* [Monte Screen Recorder](https://github.com/sbtqa/monte-media/blob/master/src/main/ru/sbtqa/monte/screenrecorder/ScreenRecorder.java) for Video Recordings
+* [Selenium](https://www.selenium.dev/) Java & API
+* [REST Assured](https://rest-assured.io/) for API Testing
+* [SikuliX API](http://sikulix.com/) for Visual Testing
+* [Appium Studio](https://digital.ai/continuous-testing/eclipse-intellij-plugins) & Java-Appium for Mobile Testing
+* [MySQL Database](https://remotemysql.com/) to stores Login Credentials
 * [OpenCSV](http://opencsv.sourceforge.net/) for CSV file parsing
 * [Allure Reports](http://allure.qatools.ru/) - Reporting System
 
