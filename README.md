@@ -73,7 +73,42 @@ Please note: Configuration file & DB credentials have been redacted.
 
 ---
 
-#### Grafana - Web
+#### Grafana - Web & API Testing
 
-##### Login
+##### Web - Login to Grafana with credentials pulled from Database
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+##### Web - View Grafana users
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+##### Web - Create new Grafana user
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+##### Web - Delete Grafana user by Username
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+##### Web - Verify element located on screen by Visual lookup
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+##### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+##### API - Verify Team name property
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+##### API - Add new Team
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+##### API - Update Team email property
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+##### API - Delete Team
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
+
+---
+
+#### Todolist - Testing with Electron Driver
+
+##### Add new Todo items, mark as completed, add new items with a color tag, mark all as completed
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron gif.gif "Electron Driver Testing")
+
