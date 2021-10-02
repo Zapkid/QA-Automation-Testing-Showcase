@@ -85,13 +85,13 @@ Please note: Configuration file & DB credentials have been redacted.
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAddUser.gif "Grafana Add NEW User")
 
 ##### Web - Delete Grafana user by Username
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Delete User")
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaDeleteUser.gif "Grafana Delete User")
 
 ##### Web - Verify element located on screen by Visual lookup
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Visual Search")
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.gif "Grafana Visual Search")
 
 ##### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana DDT")
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaSearchUsers.gif "Grafana DDT")
 
 ##### API - Verify Team name property
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana API")
@@ -112,3 +112,12 @@ Please note: Configuration file & DB credentials have been redacted.
 ##### Add new Todo items, mark as completed, add new items with a color tag, mark all as completed
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron_gif.gif "Electron Driver Testing")
 
+---
+
+#### Windows Calculator - Testing with WinAppDriver
+
+##### Simple Calculation
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcDivByZero.gif "Windows Calculator Testing - Division by Zero")
+
+##### Complex Operations
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
