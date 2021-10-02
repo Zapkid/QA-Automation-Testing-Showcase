@@ -98,6 +98,13 @@ Please note: Configuration file & DB credentials have been redacted.
 
 ---
 
+#### UK Mortgage Calculator - Mobile Testing with Appium Studio & Appium Driver
+
+##### Calculate mortgage
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron_gif.gif "Temp")
+
+---
+
 #### Todolist - Testing with Electron Driver
 
 ##### Add new Todo items, mark as completed, add new items with a color tag, mark all as completed
@@ -116,4 +123,20 @@ Please note: Configuration file & DB credentials have been redacted.
 ---
 
 ### Jenkins & Allure Reports
+
+##### Jenkins Basic & Blue Ocean Dashboards
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/JenkinsDashboards.gif "Jenkins - Dashboard")
+
+##### Jenkins Sanity Test Suites
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/SanitySuccess.gif "Jenkins - Sanity Testing")
+
+##### Jenkins Pipelines
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/pipelines.png "Jenkins - Pipelines")
+
+##### Allure Reports
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Allure Report.png "Allure Reports")
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/allure report 2.png "Allure Reports")
+
+---
+
 
