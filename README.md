@@ -135,6 +135,7 @@ Please note: Configuration file & DB credentials have been redacted.
 
 ##### Allure Reports
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Allure Report.png "Allure Reports")
+
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/allure report 2.png "Allure Reports")
 
 ---
