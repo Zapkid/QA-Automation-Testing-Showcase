@@ -110,5 +110,5 @@ Please note: Configuration file & DB credentials have been redacted.
 #### Todolist - Testing with Electron Driver
 
 ##### Add new Todo items, mark as completed, add new items with a color tag, mark all as completed
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron gif.gif "Electron Driver Testing")
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron_gif.gif "Electron Driver Testing")
 
