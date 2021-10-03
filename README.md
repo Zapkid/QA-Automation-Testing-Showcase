@@ -86,8 +86,7 @@ Please note: Configuration file & DB credentials have been redacted.
 ##### Web - Delete Grafana user by Username
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaDeleteUser.gif "Grafana Delete User")
 
-##### Web - Verify element located on screen by Visual lookup
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.png "Grafana Visual Search")
+##### Web - Verify element located on screen by Visual lookup ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.png "Grafana Visual Search")
 
 ##### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaSearchUsers.gif "Grafana DDT")
