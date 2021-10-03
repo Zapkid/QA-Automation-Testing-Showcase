@@ -100,7 +100,7 @@ Please note: Configuration file & DB credentials have been redacted.
 #### UK Mortgage Calculator - Mobile Testing with Appium Studio & Appium Driver
 
 ##### Calculate mortgage
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron_gif.gif "Temp")
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Mobile.gif "Mobile - Calculate mortgage")
 
 ---
 
@@ -133,14 +133,8 @@ Please note: Configuration file & DB credentials have been redacted.
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/pipelines.PNG "Jenkins - Pipelines")
 
 ##### Allure Reports
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Allure%20Report.PNG "Allure Reports")
-
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/allure%20report%202.PNG "Allure Reports")
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/AllureReports.gif "Allure Reports")
 
 ---
-
-
-##### Complex Operations
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
 
 
