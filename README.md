@@ -8,6 +8,10 @@
 This project is built to serve as an automation infrastructure with a TestNG framework and a Page-Object-Model for testing applications on multiple platforms.
 The infrastructure provides an easy, simple and quick way to add new tests, and is easliy expandable & maintained.
 
+Jenkins is used to schdelue executions of the Test Suites profiles for each platform (more profiles can be easliy added to create different test scenerios) linked into a pipeline.
+
+Allure Report system is used as the main reporting system.
+
 ---
 
 ### Overview
@@ -23,12 +27,14 @@ This project performs automated testing of various applications:
 
 #### Infrastructure includes:
 
-* Layers (Utilities, Extensions, Workflows...)
-* Page Object Design Pattern
-* External files support
+* Layers (utilities, extensions, workflows...)
+* Page object model design pattern
+* External files Support
 * Failure mechanisms
-* Reporting System (including video recordings & Screenshots)
+* Electron driver
+* Reporting system (including video recordings & screenshots)
 * Support for different client browsers
+* API support
 * Visual testing
 * Database support
 * CI & CD support
@@ -58,7 +64,6 @@ This project performs automated testing of various applications:
 * [OpenCSV](http://opencsv.sourceforge.net/) for CSV file parsing
 * [Jenkins](https://www.jenkins.io/) for Automating Test executions & Test Pipelines
 * [Allure Reports](http://allure.qatools.ru/) - Reporting System
-
 
 ---
 
