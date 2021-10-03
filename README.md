@@ -6,9 +6,9 @@
 ### About
 
 This project is built to serve as an automation infrastructure with a TestNG framework and a Page-Object-Model for testing applications on multiple platforms.
-The infrastructure provides an easy, simple and quick way to add new tests, and is easliy expandable & maintained.
+The infrastructure provides an easy, simple and quick way to add new tests, and is easily expandable & maintained.
 
-Jenkins is used to schdelue executions of the Test Suites profiles for each platform (more profiles can be easliy added to create different test scenerios) linked into a pipeline.
+Jenkins is used to schedule executions of the Test Suites profiles for each platform (more profiles can be easily added to create different test scenarios) linked into a pipeline.
 
 Allure Report system is used as the main reporting system.
 
@@ -65,8 +65,6 @@ This project performs automated testing of various applications:
 * [Jenkins](https://www.jenkins.io/) for Automating Test executions & Test Pipelines
 * [Allure Reports](http://allure.qatools.ru/) - Reporting System
 
----
-
 Please note: Configuration file & DB credentials have been redacted. 
 
 ---
@@ -75,9 +73,7 @@ Please note: Configuration file & DB credentials have been redacted.
 
 ---
 
-#### Grafana - Web & API Testing
-
-[Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
+#### Grafana - Web & API Testing [Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
 
 ##### Web - Login to Grafana with credentials pulled from Database
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
