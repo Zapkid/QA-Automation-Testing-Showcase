@@ -66,7 +66,7 @@ Please note: Configuration file & DB credentials have been redacted.
 
 ### Tests Overview
 
-#### Grafana - Web & API Testing - [Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
+#### Grafana: Web & API Testing with Selenium WebDriver - [Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
 
 ##### Web - Login to Grafana with credentials pulled from Database
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
@@ -85,7 +85,7 @@ Please note: Configuration file & DB credentials have been redacted.
 ##### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaSearchUsers.gif "Grafana DDT")
 
-##### API - Verify response property, Add new Team, Update property, Delete Team
+##### API - Verify response property, Add new Team, Update property, Delete Team via HTTP requests
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/APIprints.gif "Grafana API")
 
 ---
@@ -106,10 +106,10 @@ Please note: Configuration file & DB credentials have been redacted.
 
 #### Windows Calculator - Testing with WinAppDriver
 
-##### Simple Calculation
+##### Simple Calculation - Based on pre-built methods, for example: add(2,4)
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcDivByZero.gif "Windows Calculator Testing - Division by Zero")
 
-##### Complex Operations
+##### Complex Operations - Based on button assignment, for example: foo("2+4=")
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
 
 ---
