@@ -66,7 +66,7 @@ Please note: Configuration file & DB credentials have been redacted.
 
 ### Tests Overview
 
-#### Grafana - Web & API Testing [Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
+#### Grafana - Web & API Testing - [Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
 
 ##### Web - Login to Grafana with credentials pulled from Database
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
