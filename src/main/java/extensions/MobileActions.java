@@ -16,7 +16,7 @@ public class MobileActions extends CommonOps {
     @Step("Tap on Element")
     public static void tap(int fingers, MobileElement elem, int duration) {
         wait.until(ExpectedConditions.elementToBeClickable(elem));
-//        mobileDriver.tap(fingers, elem,duration);
+        mobileDriver.tap(fingers, elem,duration);
     }
 
     @Step("Swipe")
@@ -26,19 +26,19 @@ public class MobileActions extends CommonOps {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //mobileDriver.swipe(startX, startY, endX, endY, duration);
+        mobileDriver.swipe(startX, startY, endX, endY, duration);
     }
 
     @Step("Zoom Element")
     public static void zoom(MobileElement elem) {
         wait.until(ExpectedConditions.visibilityOf(elem));
-        //mobileDriver.zoom(elem);
+        mobileDriver.zoom(elem);
     }
 
     @Step("Zoom Element")
     public static void pinch(MobileElement elem) {
         wait.until(ExpectedConditions.visibilityOf(elem));
-        //mobileDriver.pinch(elem);
+        mobileDriver.pinch(elem);
     }
 
     @Step("Execute Script")
