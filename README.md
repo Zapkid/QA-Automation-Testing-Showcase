@@ -127,10 +127,16 @@ ElectronFlows.completeAllTodos();
 
 #### Windows Calculator: Testing with WinAppDriver
 
-##### Simple Calculation - Based on pre-built methods, for example: ```DesktopFlows.division(calcMain.btn_8, calcMain.btn_0);```
+##### Simple Calculation - Based on pre-built methods, for example: 
+```java
+DesktopFlows.division(calcMain.btn_8, calcMain.btn_0);
+```
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcDivByZero.gif "Windows Calculator Testing - Division by Zero")
 
-##### Complex Operations - Based on button assignment, for example: ```DesktopFlows.enterEquation("1+2*(3^4)=%14=!l=/p=");```
+##### Complex Operations - Based on button assignment, for example:
+```java
+DesktopFlows.enterEquation("1+2*(3^4)=%14=!l=/p=");
+```
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
 
 ---
