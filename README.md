@@ -130,7 +130,7 @@ Please note: Configuration file & DB credentials have been redacted.
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/SanitySuccess.gif "Jenkins - Sanity Testing")
 
 ##### Jenkins Pipelines
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/pipelines.png "Jenkins - Pipelines")
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/pipelines.PNG "Jenkins - Pipelines")
 
 ##### Allure Reports
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Allure%20Report.png "Allure Reports")
