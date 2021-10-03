@@ -99,7 +99,7 @@ Please note: Configuration file & DB credentials have been redacted.
 #### UK Mortgage Calculator - Mobile Testing with Appium Studio & Appium Driver
 
 ##### Calculate mortgage
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Mobile.gif "Mobile - Calculate mortgage")
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Mobile2.gif "Mobile - Calculate mortgage")
 
 ---
 
