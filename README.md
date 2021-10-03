@@ -1,9 +1,6 @@
 # QA Automation Testing Showcase
-#### This DEMO project utilizes a 'smart' automation infrastructure for multi-platform quality assurance automated testing to demonstrates my knowledge & capabilities in QA Automation.
+#### This project utilizes a 'smart' automation infrastructure for multi-platform quality assurance automated testing to demonstrate my knowledge & capabilities in QA Automation.
 
-
-<!-- [Demonstration Video](https://drive.google.com/file/d/1vmM2AdOjjdQmEhGrPhb4b2aCbc0yxJpb/view?usp=sharing)
- -->
 ---
 
 ### About
@@ -75,6 +72,8 @@ Please note: Configuration file & DB credentials have been redacted.
 
 #### Grafana - Web & API Testing
 
+[Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
+
 ##### Web - Login to Grafana with credentials pulled from Database
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
 
@@ -139,5 +138,9 @@ Please note: Configuration file & DB credentials have been redacted.
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/allure%20report%202.png "Allure Reports")
 
 ---
+
+
+##### Complex Operations
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
 
 
