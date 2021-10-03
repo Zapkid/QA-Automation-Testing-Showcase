@@ -43,7 +43,7 @@ This project performs automated testing of various applications:
 * Grafana API - Web API tested with REST Assuard
 * [UK Mortgage Calculator](https://play.google.com/store/apps/details?id=uk.co.jamesgrimwood.mortgageadvisor&hl=en_GB&gl=US) - Mobile application tested with Appium
 * [TodoList](https://github.com/blaadje/Todolist) Desktop application tested with ElectronDriver
-* Windows Calculator - Desktop application tested with WindowsDriver
+* Windows Calculator - Desktop application tested with WinAppDriver
 
 
 #### Tools & Frameworks:
@@ -75,6 +75,7 @@ Please note: Configuration file & DB credentials have been redacted.
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaCheckUser.gif "Grafana Users")
 
 ##### Web - Create new Grafana user
+'''WebFlows.addNewUser("John Doe", "JD@localhost", "JDTester", "123abc999");'''
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAddUser.gif "Grafana Add NEW User")
 
 ##### Web - Delete Grafana user by Username
@@ -83,6 +84,7 @@ Please note: Configuration file & DB credentials have been redacted.
 ##### Web - Verify element located on screen by Visual lookup ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.png "Grafana Visual Search")
 
 ##### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
+'''WebFlows.searchAndVerifyUser(username, shouldBeFound);'''
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaSearchUsers.gif "Grafana DDT")
 
 ##### API - Verify response property, Add new Team, Update property, Delete Team via HTTP requests
@@ -90,26 +92,35 @@ Please note: Configuration file & DB credentials have been redacted.
 
 ---
 
-#### UK Mortgage Calculator - Mobile Testing with Appium Studio & Appium Driver
+#### UK Mortgage Calculator: Mobile Testing with Appium Studio & Appium Driver
 
 ##### Calculate mortgage
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Mobile2.gif "Mobile - Calculate mortgage")
 
 ---
 
-#### Todolist - Testing with Electron Driver
+#### Todolist: Testing with Electron Driver
 
-##### Add new Todo items, mark as completed, add new items with a color tag, mark all as completed
+##### Add new Todo items, mark item as completed, delete an item, add new items with a color tag, mark all as completed
+'''
+ElectronFlows.createTodo("Learn Quality Assurance");
+ElectronFlows.createTodo("Learn Automation");
+ElectronFlows.completeTodoByName("Learn Quality Assurance");
+ElectronFlows.deleteTodoByName("Learn Quality Assurance");
+ElectronFlows.createTodoWithColorTag("I have a green color tag", "background: rgb(114, 204, 87);");
+ElectronFlows.createTodoWithColorTag("Learn Electron Driver", "background: rgb(87, 185, 244);");
+ElectronFlows.completeAllTodos();
+'''
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron_gif.gif "Electron Driver Testing")
 
 ---
 
-#### Windows Calculator - Testing with WinAppDriver
+#### Windows Calculator: Testing with WinAppDriver
 
-##### Simple Calculation - Based on pre-built methods, for example: add(2,4)
+##### Simple Calculation - Based on pre-built methods, for example: '''DesktopFlows.division(calcMain.btn_8, calcMain.btn_0);'''
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcDivByZero.gif "Windows Calculator Testing - Division by Zero")
 
-##### Complex Operations - Based on button assignment, for example: foo("2+4=")
+##### Complex Operations - Based on button assignment, for example: '''DesktopFlows.enterEquation("1+2*(3^4)=%14=!l=/p=");'''
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
 
 ---
