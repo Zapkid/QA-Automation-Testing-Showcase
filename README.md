@@ -23,8 +23,6 @@ This project performs automated testing of various applications:
 * Electron application
 * Desktop application
 
----
-
 #### Infrastructure includes:
 
 * Layers (utilities, extensions, workflows...)
@@ -39,8 +37,6 @@ This project performs automated testing of various applications:
 * Database support
 * CI & CD support
 
----
-
 #### Applications tested:
 
 * [Grafana](https://grafana.com/grafana/) - Web based application tested with WebDriver
@@ -49,7 +45,6 @@ This project performs automated testing of various applications:
 * [TodoList](https://github.com/blaadje/Todolist) Desktop application tested with ElectronDriver
 * Windows Calculator - Desktop application tested with WindowsDriver
 
----
 
 #### Tools & Frameworks:
 
@@ -66,8 +61,6 @@ This project performs automated testing of various applications:
 * [Allure Reports](http://allure.qatools.ru/) - Reporting System
 
 Please note: Configuration file & DB credentials have been redacted. 
-
----
 
 ### Tests Overview
 
@@ -135,6 +128,6 @@ Please note: Configuration file & DB credentials have been redacted.
 ##### Allure Reports
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/AllureReports.gif "Allure Reports")
 
----
+
 
 
