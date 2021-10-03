@@ -75,7 +75,9 @@ Please note: Configuration file & DB credentials have been redacted.
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaCheckUser.gif "Grafana Users")
 
 ##### Web - Create new Grafana user
-```WebFlows.addNewUser("John Doe", "JD@localhost", "JDTester", "123abc999");```
+```java
+WebFlows.addNewUser("John Doe", "JD@localhost", "JDTester", "123abc999");
+```
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAddUser.gif "Grafana Add NEW User")
 
 ##### Web - Delete Grafana user by Username
@@ -84,7 +86,9 @@ Please note: Configuration file & DB credentials have been redacted.
 ##### Web - Verify element located on screen by Visual lookup ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.png "Grafana Visual Search")
 
 ##### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
-```WebFlows.searchAndVerifyUser(username, shouldBeFound);```
+```java
+WebFlows.searchAndVerifyUser(username, shouldBeFound);
+```
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaSearchUsers.gif "Grafana DDT")
 
 ##### API - Verify response property, Add new Team, Update property, Delete Team via HTTP requests
@@ -102,7 +106,7 @@ Please note: Configuration file & DB credentials have been redacted.
 #### Todolist: Testing with Electron Driver
 
 ##### Add new Todo items, mark item as completed, delete an item, add new items with a color tag, mark all as completed
-```
+```java
 ElectronFlows.createTodo("Learn Quality Assurance");
 
 ElectronFlows.createTodo("Learn Automation");
