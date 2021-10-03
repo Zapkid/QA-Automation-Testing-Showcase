@@ -1,7 +1,7 @@
 # QA Automation Testing Showcase
 #### This project utilizes a 'smart' automation infrastructure for multi-platform quality assurance automated testing to demonstrate my knowledge & capabilities in QA Automation.
 
-
+---
 
 ### About
 
@@ -15,7 +15,6 @@ Allure Report system is used as the main reporting system.
 
 
 ### Overview
----
 
 This project performs automated testing of various applications:
 * Web based application
@@ -63,8 +62,9 @@ This project performs automated testing of various applications:
 
 Please note: Configuration file & DB credentials have been redacted. 
 
-### Tests Overview
 ---
+
+### Tests Overview
 
 #### Grafana - Web & API Testing [Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
 
