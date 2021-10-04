@@ -70,14 +70,17 @@ Please note: Configuration file & DB credentials have been redacted.
 
 ##### Web - Login to Grafana with credentials pulled from an external Database
 Verify login was successful 
+
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
 
 ##### Web - View Grafana users
 Verify expected amount of current users
+
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaCheckUser.gif "Grafana Users")
 
 ##### Web - Create a new Grafana user
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAddUser.gif "Grafana Add NEW User")
+
 ```java
 WebFlows.addNewUser("John Doe", "JD@localhost", "JDTester", "123abc999");
 ```
@@ -86,7 +89,7 @@ WebFlows.addNewUser("John Doe", "JD@localhost", "JDTester", "123abc999");
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaDeleteUser.gif "Grafana Delete User")
 
 ##### Web - Verify an element is located on screen by Visual lookup 
-Verify this image:  ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.png "Grafana Visual Search") is located on screen by searching for it by looking at pixels colors
+Verify this image:  ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.png "Grafana Visual Search") is located on screen by looking at pixels' colors
 
 ##### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaSearchUsers.gif "Grafana DDT")
@@ -140,6 +143,7 @@ ElectronFlows.completeAllTodos();
 
 ##### Simple Calculation - Based on pre-built methods
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcDivByZero.gif "Windows Calculator Testing - Division by Zero")
+
 Each operation is defined separately, allowing combinations for complex calculations & QA for smaller 'units'.
 ```java
 DesktopFlows.division(calcMain.btn_8, calcMain.btn_0);
@@ -147,6 +151,7 @@ DesktopFlows.division(calcMain.btn_8, calcMain.btn_0);
 
 ##### Complex Operations - Based on button assignment
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
+
 The button assignment allows multiple operations to be implemented in the code using only 1 line of code & 1 String as an input
 ```java
 DesktopFlows.enterEquation("1+2*(3^4)=%14=!l=/p=");
@@ -168,6 +173,7 @@ In this example, the symbols: '^' was assigned to the Power button, '%' was assi
 
 ##### Allure Reports
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/AllureReports.gif "Allure Reports")
+
 The reports show the 'steps' in each test, with info such as: description, duration, history, parameters & values,  verification values, screenshots and more.
 
 
