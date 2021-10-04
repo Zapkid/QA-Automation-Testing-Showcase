@@ -1,9 +1,9 @@
 # QA Automation Testing Showcase
-#### This project utilizes a 'smart' automation infrastructure for multi-platform quality assurance automated testing to demonstrate my knowledge & capabilities in QA Automation.
+### This project utilizes a 'smart' automation infrastructure for multi-platform quality assurance automated testing to demonstrate my knowledge & capabilities in QA Automation.
 
 ---
 
-### About
+## About
 
 This project is built to serve as an automation infrastructure with a TestNG framework and a Page-Object-Model for testing applications on multiple platforms.
 The infrastructure provides an easy, simple and quick way to add new tests, and is easily expandable & maintained.
@@ -14,7 +14,7 @@ Allure Report system is used as the main reporting system.
 
 
 
-### Overview
+## Overview
 
 This project performs automated testing of various applications:
 * Web based application
@@ -23,7 +23,7 @@ This project performs automated testing of various applications:
 * Electron application
 * Desktop application
 
-#### Infrastructure includes:
+### Infrastructure includes:
 
 * Layers (utilities, extensions, workflows...)
 * Page object model design pattern
@@ -37,7 +37,7 @@ This project performs automated testing of various applications:
 * Database support
 * CI & CD support
 
-#### Applications tested:
+### Applications tested:
 
 * [Grafana](https://grafana.com/grafana/) - Web based application tested with WebDriver
 * Grafana API - Web API tested with REST Assuard
@@ -46,7 +46,7 @@ This project performs automated testing of various applications:
 * Windows Calculator - Desktop application tested with WinAppDriver
 
 
-#### Tools & Frameworks:
+### Tools & Frameworks:
 
 * [TestNG](https://testng.org/) Framework
 * Listenrs interface for Logs & Customizable TestNG Reports
@@ -64,40 +64,40 @@ Please note: Configuration file & DB credentials have been redacted.
 
 ---
 
-### Tests Overview
+## Tests Overview
 
-#### Grafana: Web & API Testing with Selenium WebDriver - [Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
+### Grafana: Web & API Testing with Selenium WebDriver - [Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
 
-##### Web - Login to Grafana with credentials pulled from an external Database
+#### Web - Login to Grafana with credentials pulled from an external Database
 Verify login was successful 
 
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
 
-##### Web - View Grafana users
+#### Web - View Grafana users
 Verify expected amount of current users
 
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaCheckUser.gif "Grafana Users")
 
-##### Web - Create a new Grafana user
+#### Web - Create a new Grafana user
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAddUser.gif "Grafana Add NEW User")
 
 ```java
 WebFlows.addNewUser("John Doe", "JD@localhost", "JDTester", "123abc999");
 ```
 
-##### Web - Delete a Grafana user by Username
+#### Web - Delete a Grafana user by Username
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaDeleteUser.gif "Grafana Delete User")
 
-##### Web - Verify an element is located on screen by Visual lookup 
+#### Web - Verify an element is located on screen by Visual lookup 
 Verify this image:  ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.png "Grafana Visual Search") is located on screen by looking at pixels' colors
 
-##### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
+#### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaSearchUsers.gif "Grafana DDT")
 ```java
 WebFlows.searchAndVerifyUser(username, shouldBeFound);
 ```
 
-##### API - Verify HTTP response property (GET), Add new Team (POST), Update property (PUT), Delete Team by team ID (DELETE)
+#### API - Verify HTTP response property (GET), Add new Team (POST), Update property (PUT), Delete Team by team ID (DELETE)
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/APIprints.gif "Grafana API")
 ```java
 ApiFlows.getTeamProperty("teams[0].name"), "Kuku Group");
@@ -110,16 +110,16 @@ ApiFlows.deleteTeam(id);
 ```
 ---
 
-#### UK Mortgage Calculator: Mobile Testing with Appium Studio & Appium Driver
+### UK Mortgage Calculator: Mobile Testing with Appium Studio & Appium Driver
 
-##### Calculate mortgage
+#### Calculate mortgage
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Mobile2.gif "Mobile - Calculate mortgage")
 
 ---
 
-#### Todolist: Testing with Electron Driver
+### Todolist: Testing with Electron Driver
 
-##### Add new Todo items, mark item as completed, delete an item, add new items with a color tag, mark all as completed
+#### Add new Todo items, mark item as completed, delete an item, add new items with a color tag, mark all as completed
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron_gif.gif "Electron Driver Testing")
 ```java
 ElectronFlows.createTodo("Learn Quality Assurance");
@@ -139,9 +139,9 @@ ElectronFlows.completeAllTodos();
 
 ---
 
-#### Windows Calculator: Testing with WinAppDriver
+### Windows Calculator: Testing with WinAppDriver
 
-##### Simple Calculation - Based on pre-built methods
+#### Simple Calculation - Based on pre-built methods
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcDivByZero.gif "Windows Calculator Testing - Division by Zero")
 
 Each operation is defined separately, allowing combinations for complex calculations & QA for smaller 'units'.
@@ -149,7 +149,7 @@ Each operation is defined separately, allowing combinations for complex calculat
 DesktopFlows.division(calcMain.btn_8, calcMain.btn_0);
 ```
 
-##### Complex Operations - Based on button assignment
+#### Complex Operations - Based on button assignment
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
 
 The button assignment allows multiple operations to be implemented in the code using only 1 line of code & 1 String as an input
@@ -162,16 +162,16 @@ In this example, the symbols: '^' was assigned to the Power button, '%' was assi
 
 ### Jenkins & Allure Reports
 
-##### Jenkins Basic & Blue Ocean Dashboards
+#### Jenkins Basic & Blue Ocean Dashboards
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/JenkinsDashboards.gif "Jenkins - Dashboard")
 
-##### Jenkins Sanity Test Suites
+#### Jenkins Sanity Test Suites
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/SanitySuccess.gif "Jenkins - Sanity Testing")
 
-##### Jenkins Pipelines
+#### Jenkins Pipelines
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/pipelines.PNG "Jenkins - Pipelines")
 
-##### Allure Reports
+#### Allure Reports
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/AllureReports.gif "Allure Reports")
 
 The reports show the 'steps' in each test, with info such as: description, duration, history, parameters & values,  verification values, screenshots and more.
