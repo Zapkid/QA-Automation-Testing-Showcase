@@ -55,7 +55,7 @@ This project performs automated testing of various applications:
 * [REST Assured](https://rest-assured.io/) for API Testing
 * [SikuliX API](http://sikulix.com/) for Visual Testing
 * [Appium Studio](https://digital.ai/continuous-testing/eclipse-intellij-plugins) & Java-Appium for Mobile Testing
-* [MySQL Database](https://remotemysql.com/) to stores Login Credentials
+* [MySQL Database](https://remotemysql.com/) to store Login Credentials
 * [OpenCSV](http://opencsv.sourceforge.net/) for CSV file parsing
 * [Jenkins](https://www.jenkins.io/) for Automating Test executions & Test Pipelines
 * [Allure Reports](http://allure.qatools.ru/) - Reporting System
@@ -68,32 +68,43 @@ Please note: Configuration file & DB credentials have been redacted.
 
 #### Grafana: Web & API Testing with Selenium WebDriver - [Grafana Web Tests Video](https://drive.google.com/file/d/1yubF4IKtwFYXZvSW8g9FfKCWxKsCSmH2/view?usp=sharing)
 
-##### Web - Login to Grafana with credentials pulled from Database
+##### Web - Login to Grafana with credentials pulled from an external Database
+Verify login was successful 
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Grafana_Login.gif "Grafana Login")
 
 ##### Web - View Grafana users
+Verify expected amount of current users
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaCheckUser.gif "Grafana Users")
 
-##### Web - Create new Grafana user
+##### Web - Create a new Grafana user
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAddUser.gif "Grafana Add NEW User")
 ```java
 WebFlows.addNewUser("John Doe", "JD@localhost", "JDTester", "123abc999");
 ```
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAddUser.gif "Grafana Add NEW User")
 
-##### Web - Delete Grafana user by Username
+##### Web - Delete a Grafana user by Username
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaDeleteUser.gif "Grafana Delete User")
 
-##### Web - Verify element located on screen by Visual lookup ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.png "Grafana Visual Search")
+##### Web - Verify an element is located on screen by Visual lookup 
+Verify this image:  ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaAvatar.png "Grafana Visual Search") is located on screen by searching for it by looking at pixels colors
 
 ##### Web - Check if a user is found - Data Driven Testing using a data provider for multiple users & expected results
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaSearchUsers.gif "Grafana DDT")
 ```java
 WebFlows.searchAndVerifyUser(username, shouldBeFound);
 ```
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/GrafanaSearchUsers.gif "Grafana DDT")
 
-##### API - Verify response property, Add new Team, Update property, Delete Team via HTTP requests
+##### API - Verify HTTP response property (GET), Add new Team (POST), Update property (PUT), Delete Team by team ID (DELETE)
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/APIprints.gif "Grafana API")
+```java
+ApiFlows.getTeamProperty("teams[0].name"), "Kuku Group");
 
+ApiFlows.postTeam("YoniTeam", "yoni@team.com");
+
+ApiFlows.updateTeam("YoniTeam", "yoni@atid.com", id);
+
+ApiFlows.deleteTeam(id);
+```
 ---
 
 #### UK Mortgage Calculator: Mobile Testing with Appium Studio & Appium Driver
@@ -106,6 +117,7 @@ WebFlows.searchAndVerifyUser(username, shouldBeFound);
 #### Todolist: Testing with Electron Driver
 
 ##### Add new Todo items, mark item as completed, delete an item, add new items with a color tag, mark all as completed
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron_gif.gif "Electron Driver Testing")
 ```java
 ElectronFlows.createTodo("Learn Quality Assurance");
 
@@ -121,23 +133,25 @@ ElectronFlows.createTodoWithColorTag("Learn Electron Driver", "background: rgb(8
 
 ElectronFlows.completeAllTodos();
 ```
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/Electron_gif.gif "Electron Driver Testing")
 
 ---
 
 #### Windows Calculator: Testing with WinAppDriver
 
-##### Simple Calculation - Based on pre-built methods, for example: 
+##### Simple Calculation - Based on pre-built methods
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcDivByZero.gif "Windows Calculator Testing - Division by Zero")
+Each operation is defined separately, allowing combinations for complex calculations & QA for smaller 'units'.
 ```java
 DesktopFlows.division(calcMain.btn_8, calcMain.btn_0);
 ```
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcDivByZero.gif "Windows Calculator Testing - Division by Zero")
 
-##### Complex Operations - Based on button assignment, for example:
+##### Complex Operations - Based on button assignment
+![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
+The button assignment allows multiple operations to be implemented in the code using only 1 line of code & 1 String as an input
 ```java
 DesktopFlows.enterEquation("1+2*(3^4)=%14=!l=/p=");
 ```
-![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/CalcComplex.gif "Windows Calculator Testing - Complex Operations")
+In this example, the symbols: '^' was assigned to the Power button, '%' was assigned to the mod button, '!' was assigned to the Factorial button, 'l' was assigned to the log button, 'p' was assigned to the Pi button. The common chars were assigned respectively.
 
 ---
 
@@ -154,6 +168,7 @@ DesktopFlows.enterEquation("1+2*(3^4)=%14=!l=/p=");
 
 ##### Allure Reports
 ![alt text](https://raw.githubusercontent.com/Zapkid/QA-Automation-Testing-Showcase/master/ImageRepository/AllureReports.gif "Allure Reports")
+The reports show the 'steps' in each test, with info such as: description, duration, history, parameters & values,  verification values, screenshots and more.
 
 
 
